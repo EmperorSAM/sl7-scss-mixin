@@ -1,1 +1,3 @@
-# sl7-scss-mixin
+# SCSS mixin
+
+Миксы для SCSS.

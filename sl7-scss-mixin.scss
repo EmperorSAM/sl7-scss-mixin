@@ -1,0 +1,13 @@
+/**
+ * Margin elements & no margin last child.
+ *
+ * $margin: margin elements.
+ * $side: right (default), left, top, bottom.
+ */
+@mixin sl7-margin-last($margin, $side: right) {
+  margin-#{$side}: $margin;
+
+  &:last-child {
+    margin-#{$side}: 0;
+  }
+}
