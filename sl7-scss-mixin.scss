@@ -2,7 +2,6 @@
 //
 // $margin: margin elements.
 // $side: right (default), left, top, bottom.
-//
 @mixin sl7-margin-last($margin, $side: right) {
   margin-#{$side}: $margin;
 
@@ -12,9 +11,18 @@
 }
 
 // Hover & focus for selector.
-@mixin sl7-hover() {
+@mixin sl7-hover {
   &:hover,
   &:focus {
     @content;
+  }
+}
+
+// Clearfix.
+@mixin sl7-clearfix {
+  &:after {
+    display: block;
+    clear: both;
+    content: "";
   }
 }
